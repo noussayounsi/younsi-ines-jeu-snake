@@ -1,5 +1,4 @@
 body {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -11,4 +10,57 @@ canvas {
   background: #000;
   border: 2px solid rgb(255, 0, 149);
   box-shadow: 0 0 10px rgb(255, 0,149);
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: rgb(255, 0, 149);
+  text-shadow: 0 0 10px rgb(255, 0, 149);
+  text-align: center;
+}
+header {
+  width: 100%;
+  padding: 15px 0;
+  background: #000;
+  box-shadow: 0 0 10px rgb(255, 0, 149);
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: (255, 0, 149);
+  font-size: 24px;
+  text-shadow: 0 0 8px rgb(255, 0, 149);
+  margin: 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: rgb(255, 0, 149);
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgb(255, 0, 149);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
