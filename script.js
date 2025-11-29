@@ -45,3 +45,19 @@ function draw() {
 }
 
 setInterval(draw, 150);
+// mange nourriture
+if (head.x === food.x && head.y === food.y) {
+  score++;
+  food = {
+    x: Math.floor(Math.random() * 20) * box,
+    y: Math.floor(Math.random() * 20) * box
+  };
+} else {
+  snake.pop();
+}
+
+// Score
+ctx.fillStyle = "#0f0";
+ctx.font = "20px Arial";
+ctx.fillText("Score : " + score, 10, 20);
+
