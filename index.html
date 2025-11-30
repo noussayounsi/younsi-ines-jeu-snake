@@ -1,31 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNAKE GAME</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake Game — Ethel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <nav>
-      <h2 class="logo">Snake Game</h2>
-      <ul class="menu">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Jeu</a></li>
-        <li><a href="#">Score</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <h2 class="logo">Snake Game</h2>
+    <ul class="menu">
+      <li><a href="#" id="btn-menu">Menu</a></li>
+      <li><a href="#" id="btn-score">Score</a></li>
+    </ul>
+  </nav>
+</header>
 
+<main>
   <h1>Snake Game</h1>
-
   <div class="container">
     <canvas id="game" width="600" height="600"></canvas>
   </div>
+</main>
+
+<div id="start-screen" class="overlay visible">
+  <div class="box">
+    <h2>Bienvenue</h2>
+    <p>Choisis un skin, puis commence à jouer</p>
+    <div class="skins">
+      <button class="skin-btn" data-skin="neon" id="skin-neon">Néon</button>
+      <button class="skin-btn" data-skin="rainbow" id="skin-rainbow">Arc-en-ciel</button>
+      <button class="skin-btn" data-skin="normal" id="skin-normal">Normal</button>
+    </div>
+    <button id="startBtn">Commencer à jouer</button>
+    <label class="muted"><input id="music-toggle" type="checkbox" checked> Musique de fond</label>
+  </div>
+</div>
+
+<div id="in-game-menu" class="overlay hidden">
+  <div class="box">
+    <h2>Menu</h2>
+    <button id="continue-btn">Continuer</button>
+    <button id="replay-btn">Rejouer</button>
+  </div>
+</div>
+
+<div id="game-over" class="overlay hidden">
+  <div class="box">
+    <h2>Game Over</h2>
+    <p id="final-score">Score : 0</p>
+    <button id="retry-btn">Rejouer</button>
+  </div>
+</div>
 
 </body>
-
 </html>
