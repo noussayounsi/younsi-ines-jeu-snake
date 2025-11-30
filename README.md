@@ -19,7 +19,7 @@ Snake Game est une version modernisée du classique jeu Snake, développée pour
 - Responsive design pour mobile et desktop
 
 ## Lien vers la page GitHub Pages
-[Voir le rendu final sur GitHub Pages](https://ton-nom-utilisateur.github.io/snake-game/)
+[Voir le rendu final sur GitHub Pages](https://noussayounsi.github.io/younsi-ines-jeu-snake/)
 
 ## Nouveautés explorées
 - Découverte et utilisation de la **Canvas API** pour dessiner et animer le serpent
